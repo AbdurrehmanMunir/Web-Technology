@@ -1,0 +1,81 @@
+<!doctype html>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>My Portfolio</title>
+<meta name="description" content="A simple student portfolio website hosted on IIS." />
+<meta property="og:title" content="My Portfolio" />
+<meta property="og:description" content="A simple student portfolio website hosted on IIS." />
+<link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+<header class="site-header">
+<nav class="nav">
+<a class="brand" href="#home">👋 My Portfolio</a>
+<div class="nav-links">
+<a href="#about">About</a>
+<a href="#projects">Projects</a>
+<a href="#contact">Contact</a>
+</div>
+</nav>
+</header>
+
+
+<main id="home" class="container">
+<section class="hero">
+<h1>Hi, I’m <span class="accent">Abdurrehman Munir</span></h1>
+<p class="lead">CS student learning web technologies. This site is hosted on IIS.</p>
+<a href="#projects" class="btn">View Projects</a>
+</section>
+
+
+<section id="about" class="section">
+<h2>About Me</h2>
+<p>I like building simple and useful web apps. I’m currently learning HTML, CSS, and JavaScript. This page is intentionally lightweight and easy to understand.</p>
+</section>
+
+
+<section id="projects" class="section">
+<h2>Projects</h2>
+<div class="cards">
+<article class="card">
+<h3>Calculator</h3>
+<p>A small JS calculator I wrote while practicing functions and DOM.</p>
+</article>
+<article class="card">
+<h3>To‑Do App</h3>
+<p>A to‑do list that saves tasks to <code>localStorage</code>.</p>
+</article>
+<article class="card">
+<h3>Weather UI</h3>
+<p>Simple UI that displays sample weather data. (No API in this assignment.)</p>
+</article>
+</div>
+</section>
+
+
+<section id="contact" class="section">
+<h2>Contact</h2>
+<form class="contact" onsubmit="return false;">
+<label>
+Your Email
+<input id="email" type="email" placeholder="you@example.com" required />
+</label>
+<label>
+Message
+<textarea id="message" rows="4" placeholder="Hi! I'd like to connect."></textarea>
+</label>
+<button id="sendBtn" class="btn">Send (Demo)</button>
+<p id="status" class="status" aria-live="polite"></p>
+</form>
+</section>
+</main>
+
+
+<footer class="site-footer">
+<p>© <span id="year"></span> Your Name — Hosted on IIS</p>
+</footer>
+
+
+<script src="assets/script.js"></script>
+</body>
+</html>
